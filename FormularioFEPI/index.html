@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Fepi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <h1 class="tituloh1">Cadastro Pessoal</h1>
+                
+                <p class="paragrafohead">Preencha as Lacunas abaixo para prosseguir:</p>
+                <p style="margin-left: 50px;">Nome: João Pedro Carvalho Diniz. RA: 00019794</p>
+            </div>
+            <div>
+                <img src="logo-header 1.webp" alt="pessoa segurando lupa" class="image">
+            </div>      
+        </div>
+    </header>
+
+    <main class="maincont">
+       <div class="box">
+        <form action="">
+            <fieldset class="fieldsetcss">
+                <legend class="legendcss"><b> Dados Pessoais</b></legend>
+                
+                <div class="inputbox">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required placeholder="NOME COMPLETO">
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="inputUser" required placeholder="testeemail@hotmail.com">
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="nascimento">Nascimento:</label>
+                    <input type="date" name="Nascimento" id="Nascimento" class="inputUser" required placeholder="dd/mm/aaaa">
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="rg">Rg:</label>
+                    <input type="text" name="rg" id="rg" class="inputUser" required placeholder="XX-XX.XXX.XXX">
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="CPF">CPF:</label>
+                    <input type="text" name="CPF" id="CPF" class="inputUser" required placeholder="XXX.XXX.XXX-XX">
+                </div>
+                <br>
+            </fieldset>
+        </form>            
+        <form class="formulario">
+            <fieldset class="fieldsetcss">
+                <legend class="legendcss"><b> Endereço</b></legend>
+                <div class="inputbox">
+                    <label for="Rua">Rua:</label>
+                    <input type="text" name="Rua" id="Rua" class="inputUser" required >
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="numero">Numero:</label>
+                    <input type="number" name="numero" id="numero" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="Bairro">Bairro:</label>
+                    <input type="datetime" name="Bairro" id="Bairro" class="inputUser" required >
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="Estado">Estado:</label>
+                    <select name="Estado" class="inputUser">
+                        <option value="Norte">Norte</option> 
+                        <option value="Norte">Nordeste</option> 
+                        <option value="Norte" selected>sul</option> 
+                        <option value="Norte">sudeste</option> 
+                        <option value="Norte">centro-oeste</option> 
+                    </select>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="Cidade">Cidade:</label>
+                    <input type="text" name="Cidade" id="Cidade" class="inputUser" required>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="CEP">CEP:</label>
+                    <input type="text" name="CEP" id="CEP" class="inputUser" required>
+                </div>
+                <br>
+            </fieldset>
+        </form>                   
+        <form>
+            <fieldset class="fieldsetcss">
+                <legend class="legendcss"><b>Login</b></legend>
+               
+                <div class="inputbox">
+                    <label for="images">Imagem de perfil:</label>
+                    <input type="file" name="images" id="images" class="inputUser" required >
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="login">Login de usuário:</label>
+                    <input type="email" name="login" id="login" class="inputUser" required placeholder="testeemail@hotmail.com">
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="senha">senha:</label>
+                    <input type="password" name="senha" id="senha" class="inputUser" required placeholder="digite sua senha">
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label for="confirmsenha">confirmar senha:</label>
+                    <input type="password" nome="confirmsenha" id="confirmsenha" class="inputUser" required placeholder="Confirme sua senha">
+                </div>
+                <br>
+            </fieldset>    
+        </form>
+       </div>
+       <div class="inputsend">
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="Resetar" id="resetar">
+        <a href="#" target="_blank" rel="external" class="termosuso">termos de uso</a>
+        <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="external" class="termos">LGPD para saber mais</a>
+    </div>
+    </form> 
+    </main>
+</body>
+</html>
